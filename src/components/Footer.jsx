@@ -1,4 +1,6 @@
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { NavLink } from "react-router";
+import logo from "../assets/restaurant-white.png";
 
 const Footer = () => {
   return (
@@ -6,12 +8,26 @@ const Footer = () => {
       <footer className="bg-[#474747] text-white py-10 px-5 sm:px-[5vw] lg:px-[9vw]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* About Section */}
-          <div>
-            <h3 className="text-2xl font-bold">Home Feels Restaurant</h3>
-            <p className="mt-3 text-[#ADB29E]">
-              A place where flavors come alive and memories are made. Dine with
-              us and enjoy the best meals in town.
-            </p>
+          <div className="flex flex-col gap-4">
+            <div className="-mt-2">
+              <NavLink to="/">
+                <div className="flex gap-3">
+                  <img src={logo} alt="" className="w-10 lg:w-12" />
+                  <div className="text-center pt-[8px] lg:pt-[10px]">
+                    <p className="text-2xl lg:text-3xl font-Francois text-white">
+                      HOME FEELS
+                    </p>
+                  </div>
+                </div>
+              </NavLink>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold">Home Feels Restaurant</h3>
+              <p className="mt-3 text-[#ADB29E]">
+                A place where flavors come alive and memories are made. Dine
+                with us and enjoy the best meals in town.
+              </p>
+            </div>
           </div>
 
           {/* Quick Links */}

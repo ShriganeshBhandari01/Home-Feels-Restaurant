@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "./Title";
 import ReviewsCard from "./ReviewsCard";
 import reviewOne from "../assets/review-one.png";
