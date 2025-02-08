@@ -17,7 +17,7 @@ const Delivery = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="w-full lg:w-1/2 flex flex-col gap-3">
+        <div className="hidden w-full lg:w-1/2 lg:flex flex-col gap-3">
           <div className="h-96 overflow-hidden rounded-2xl">
             <img
               src={aboutFive}

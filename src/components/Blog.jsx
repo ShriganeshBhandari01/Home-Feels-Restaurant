@@ -30,15 +30,12 @@ const Blog = () => {
   ];
 
   return (
-    <div className="px-3 sm:px-[5vw] lg:px-[9vw] pb-12">
-      <div className="flex justify-between items-center mb-6">
-        <Title title="Our Blog & Articles" />
-        <button className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300">
-          Read All Articles
-        </button>
-      </div>
+    <div className="pt-4 md:pt-6 lg:pt-8 px-3 sm:px-[5vw] lg:px-[9vw]">
+      {/* <div className="flex justify-between items-center mb-6"> */}
+      <Title title="Our Blog & Articles" />
+      {/* </div> */}
 
-      <div className="flex flex-col lg:flex-row gap-6 w-full items-stretch pt-8">
+      <div className="flex flex-col lg:flex-row gap-6 w-full items-stretch pt-8 mt-8">
         {/* Left Feature Blog */}
         <div className="w-full lg:w-1/2 overflow-hidden rounded-2xl flex flex-col border border-[#F9F9F7] bg-white shadow-xl">
           <img
@@ -61,7 +58,7 @@ const Blog = () => {
         </div>
 
         {/* Right Blog Grid */}
-        <div className="w-full lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="hidden sm:grid w-full lg:w-1/2 grid-cols-1 sm:grid-cols-2 gap-6">
           {blogs.map((blog, index) => (
             <div
               key={index}
@@ -81,6 +78,11 @@ const Blog = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="flex justify-center mb-8 md:py-8 mt-6">
+        <button className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 cursor-pointer">
+          Read All Articles
+        </button>
       </div>
     </div>
   );
