@@ -34,19 +34,19 @@ const AboutContainer = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="flex flex-col items-center border border-[#DBDFD0] p-8 rounded-lg text-2xl font-PlayFair">
+            <div className="flex flex-col items-center border border-[#DBDFD0] p-8 rounded-lg text-2xl font-PlayFair text-center">
               <p>3</p>
               <p>Locations</p>
             </div>
-            <div className="flex flex-col items-center border border-[#DBDFD0] p-8 rounded-lg text-2xl font-PlayFair">
+            <div className="flex flex-col items-center border border-[#DBDFD0] p-8 rounded-lg text-2xl font-PlayFair text-center">
               <p>1995</p>
               <p>Founded</p>
             </div>
-            <div className="flex flex-col items-center border border-[#DBDFD0] p-8 rounded-lg text-2xl font-PlayFair">
+            <div className="flex flex-col items-center border border-[#DBDFD0] p-8 rounded-lg text-2xl font-PlayFair text-center">
               <p>65+</p>
               <p>Staff Members</p>
             </div>
-            <div className="flex flex-col items-center border border-[#DBDFD0] p-8 rounded-lg text-2xl font-PlayFair">
+            <div className="flex flex-col items-center border border-[#DBDFD0] p-8 rounded-lg text-2xl font-PlayFair text-center">
               <p>100%</p>
               <p>Satisfied Customers</p>
             </div>

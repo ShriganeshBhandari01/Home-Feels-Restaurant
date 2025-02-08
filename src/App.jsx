@@ -3,6 +3,7 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import Navbar from "./components/Navbar";
 import AboutPage from "./pages/AboutPage";
+import MenuPage from "./pages/MenuPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/menu" element={<MenuPage />} />
         </Routes>
       </div>
     </>
