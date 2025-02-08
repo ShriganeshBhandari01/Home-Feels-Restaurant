@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router";
 import { useState } from "react";
 import menu_icon from "../assets/menu_icon.png";
 import dropdown_icon from "../assets/dropdown_icon.png";
-import logo from "../assets/logo.png";
+import logo from "../assets/restaurant.png";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
@@ -13,9 +13,14 @@ const Navbar = () => {
   return (
     <>
       <div className="flex justify-between items-center gap-4 py-4">
-        <div>
+        <div className="-mt-2">
           <NavLink to="/">
-            <img src={logo} alt="" className="w-[120px]" />
+            <div className="flex gap-3 items-center justify-center">
+              <img src={logo} alt="" className="w-10 lg:w-12" />
+              <div className="text-center pt-[8px] lg:pt-[10px]">
+                <p className="text-2xl lg:text-3xl font-Francois text-black">HOME FEELS</p>
+              </div>
+            </div>
           </NavLink>
         </div>
 
@@ -40,9 +45,9 @@ const Navbar = () => {
 
         <div className="flex gap-4 justify-center items-center">
           <Link to="/cart">
-          <button className="px-6 py-3 border text-black rounded-full hover:bg-green-600 hover:text-white transition duration-300 font-DMSans cursor-pointer">
-          Book a Table
-        </button>
+            <button className="px-6 py-3 border text-black rounded-full hover:bg-green-600 hover:text-white transition duration-300 font-DMSans cursor-pointer">
+              Book a Table
+            </button>
           </Link>
           <div className="md:hidden">
             <img

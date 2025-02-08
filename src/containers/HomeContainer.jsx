@@ -1,6 +1,7 @@
 import About from "../components/About";
 import Blog from "../components/Blog";
 import Delivery from "../components/Delivery";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Menu from "../components/Menu";
 import Reviews from "../components/Reviews";
@@ -18,6 +19,7 @@ const HomeContainer = () => {
         <Delivery />
       </div>
       <Blog/>
+      <Footer/>
     </>
   );
 };

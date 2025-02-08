@@ -30,7 +30,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="px-3 sm:px-[5vw] lg:px-[9vw] pb-10">
+    <div className="px-3 sm:px-[5vw] lg:px-[9vw] pb-12">
       <div className="flex justify-between items-center mb-6">
         <Title title="Our Blog & Articles" />
         <button className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300">
@@ -40,7 +40,7 @@ const Blog = () => {
 
       <div className="flex flex-col lg:flex-row gap-6 w-full items-stretch pt-8">
         {/* Left Feature Blog */}
-        <div className="w-full lg:w-1/2 overflow-hidden rounded-2xl flex flex-col border border-[#F9F9F7] bg-white shadow-2xl">
+        <div className="w-full lg:w-1/2 overflow-hidden rounded-2xl flex flex-col border border-[#F9F9F7] bg-white shadow-xl">
           <img
             src={burger}
             alt="Healthy food"
@@ -65,7 +65,7 @@ const Blog = () => {
           {blogs.map((blog, index) => (
             <div
               key={index}
-              className="h-[260px] sm:h-[300px] overflow-hidden rounded-2xl flex flex-col border border-[#F9F9F7] bg-white shadow-2xl"
+              className="h-[260px] sm:h-[300px] overflow-hidden rounded-2xl flex flex-col border border-[#F9F9F7] bg-white shadow-xl"
             >
               <img
                 src={blog.img}
