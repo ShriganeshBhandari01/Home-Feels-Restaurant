@@ -29,11 +29,11 @@ const Navbar = () => {
             <p>Home</p>
             <hr className="w-6/12 mx-auto h-[3px] bg-[#303030] hidden " />
           </NavLink>
-          <NavLink to="/collections">
+          <NavLink to="/about">
             <p>About</p>
             <hr className="w-6/12 mx-auto h-[3px] bg-[#303030] hidden" />
           </NavLink>
-          <NavLink to="/about">
+          <NavLink to="/menu">
             <p>Menu</p>
             <hr className="w-6/12 mx-auto h-[3px] bg-[#303030] hidden" />
           </NavLink>
@@ -73,10 +73,10 @@ const Navbar = () => {
               <NavLink to="/" onClick={() => setNavActive(false)}>
                 <p className="border-2 border-b-0 p-2">Home</p>
               </NavLink>
-              <NavLink to="/collections" onClick={() => setNavActive(false)}>
+              <NavLink to="/about" onClick={() => setNavActive(false)}>
                 <p className="border-2 border-b-0 p-2">About</p>
               </NavLink>
-              <NavLink to="/about" onClick={() => setNavActive(false)}>
+              <NavLink to="/menu" onClick={() => setNavActive(false)}>
                 <p className="border-2 border-b-0 p-2">Menu</p>
               </NavLink>
               <NavLink to="/contact" onClick={() => setNavActive(false)}>

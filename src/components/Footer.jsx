@@ -8,7 +8,7 @@ const Footer = () => {
       <footer className="bg-[#474747] text-white py-10 px-5 sm:px-[5vw] lg:px-[9vw]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* About Section */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
             <div className="-mt-2">
               <NavLink to="/">
                 <div className="flex gap-3">
@@ -22,8 +22,7 @@ const Footer = () => {
               </NavLink>
             </div>
             <div>
-              <h3 className="text-2xl font-bold">Home Feels Restaurant</h3>
-              <p className="mt-3 text-[#ADB29E]">
+              <p className="mt-3 text-[#ADB29E] font-DMSans">
                 A place where flavors come alive and memories are made. Dine
                 with us and enjoy the best meals in town.
               </p>
@@ -31,13 +30,13 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-semibold">Quick Links</h3>
+          <div className="font-DMSans">
+            <h3 className="text-xl font-semibold font-DMSans">Quick Links</h3>
             <ul className="mt-3 space-y-2">
               <li>
                 <a
                   href="/"
-                  className="text-[#ADB29E] hover:text-white transition"
+                  className="text-[#ADB29E] hover:text-white transition font-DMSans"
                 >
                   Home
                 </a>
@@ -70,7 +69,7 @@ const Footer = () => {
           </div>
 
           {/* Contact & Social Media */}
-          <div>
+          <div className="font-DMSans">
             <h3 className="text-xl font-semibold">Get in Touch</h3>
             <p className="mt-3 text-[#ADB29E]">📍 123 Main Street, Your City</p>
             <p className="text-[#ADB29E]">📞 (123) 456-7890</p>

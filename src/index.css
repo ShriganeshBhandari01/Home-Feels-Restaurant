@@ -12,6 +12,7 @@ html {
   --font-DMSans: "DM Sans", sans-serif;
   --font-Francois: "Francois One", sans-serif;
 }
+
 a.active hr {
   display: flex;
 }
