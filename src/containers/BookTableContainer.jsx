@@ -24,7 +24,7 @@ const BookTableContainer = () => {
         {/* Form Section */}
         <form className="flex-1 flex gap-6 flex-col">
           <div className="flex gap-4 flex-col lg:flex-row">
-            <div className="flex flex-col flex-1 gap-2">
+            <div className="flex flex-col flex-1 gap-2 w-full">
               <label
                 htmlFor="date"
                 className="font-DMSans font-bold text-[16px]"
@@ -34,11 +34,11 @@ const BookTableContainer = () => {
               <input
                 type="date"
                 id="date"
-                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4"
+                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 w-full"
                 required
               />
             </div>
-            <div className="flex flex-col flex-1 gap-2">
+            <div className="flex flex-col flex-1 gap-2 w-full">
               <label
                 htmlFor="time"
                 className="font-DMSans font-bold text-[16px]"
@@ -48,7 +48,7 @@ const BookTableContainer = () => {
               <input
                 type="time"
                 id="time"
-                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4"
+                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 w-full"
                 required
               />
             </div>
