@@ -9,18 +9,18 @@ const ContactContainer = () => {
         <div className="flex flex-col gap-5 items-center justify-center pt-8">
           <Title title="Contact Us" />
           <p className="max-w-[600px] text-center text-gray-600">
-            We consider all the drivers of change gives you the components you
-            need to create something truly meaningful.
+            Reach out to us with any questions or inquiries. We&lsquo;re here to help
+            and look forward to hearing from you!
           </p>
         </div>
       </div>
 
       {/* Form and Contact Info Section */}
-      <div className="w-full h-[40vh]"></div>
-      <div className="absolute top-[20%] left-1/2 transform -translate-x-1/2 w-[90%] max-w-5xl bg-white p-8 shadow-xl rounded-2xl flex flex-col lg:flex-row gap-8">
+      <div className="w-full h-[60vh] lg:h-[45vh]"></div>
+      <div className="absolute top-[14%] lg:top-[18%] left-1/2 transform -translate-x-1/2 w-[90%] max-w-5xl bg-white p-8 shadow-xl rounded-2xl flex flex-col lg:flex-row gap-8">
         {/* Form Section */}
-        <form className="flex-1 flex flex-col gap-6">
-          <div className="flex gap-4">
+        <form className="flex-1 flex gap-6 flex-col">
+          <div className="flex gap-4 flex-col  lg:flex-row">
             <div className="flex flex-col flex-1 gap-2">
               <label
                 htmlFor="Name"
@@ -86,7 +86,7 @@ const ContactContainer = () => {
         </form>
       </div>
       {/* Contact Info Section */}
-      <div className="flex justify-evenly mx-auto w-[90%] px-3 sm:px-[5vw] lg:px-[9vw] -mt-11 mb-10">
+      <div className="flex flex-col lg:flex-row justify-evenly mx-auto w-[90%] px-3 sm:px-[5vw] lg:px-[9vw] -mt-11 mb-10 gap-7">
         <div className="">
           <p className="font-bold text-lg">Call Us:</p>
           <p className="text-gray-600">+1-234-567-8900</p>

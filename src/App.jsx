@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import AboutPage from "./pages/AboutPage";
 import MenuPage from "./pages/MenuPage";
 import ContactPage from "./pages/ContactPage";
+import BookTablePage from "./pages/BookTablePage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/table-booking" element={<BookTablePage />} />
         </Routes>
       </div>
     </>

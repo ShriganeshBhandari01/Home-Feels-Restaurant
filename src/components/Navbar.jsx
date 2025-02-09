@@ -18,7 +18,9 @@ const Navbar = () => {
             <div className="flex gap-3 items-center justify-center">
               <img src={logo} alt="" className="w-10 lg:w-12" />
               <div className="text-center pt-[8px] lg:pt-[10px]">
-                <p className="text-2xl lg:text-3xl font-Francois text-black">HOME FEELS</p>
+                <p className="text-2xl lg:text-3xl font-Francois text-black">
+                  HOME FEELS
+                </p>
               </div>
             </div>
           </NavLink>
@@ -44,7 +46,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-4 justify-center items-center">
-          <Link to="/cart">
+          <Link to="/table-booking">
             <button className="px-6 py-3 border text-black rounded-full hover:bg-green-600 hover:text-white transition duration-300 font-DMSans cursor-pointer">
               Book a Table
             </button>
