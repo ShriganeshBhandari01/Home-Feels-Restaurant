@@ -1,7 +1,12 @@
 import { Link } from "react-router";
 import Title from "../components/Title";
+import { useState } from "react";
 
 const SignupContainer = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confPassword, setConfPassword] = useState("");
   return (
     <div className="pt-4 md:pt-6 lg:pt-8 px-3 sm:px-[5vw] lg:px-[9vw] flex flex-col items-center min-h-[60vh]">
       <div className="flex flex-col gap-5 items-center justify-center w-full max-w-lg bg-white p-6 shadow-lg rounded-xl">
@@ -16,6 +21,8 @@ const SignupContainer = () => {
             <input
               type="text"
               placeholder="Enter your name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
               required
             />
@@ -25,6 +32,8 @@ const SignupContainer = () => {
             <input
               type="email"
               placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
               required
             />
@@ -35,6 +44,8 @@ const SignupContainer = () => {
             <input
               type="password"
               placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
               required
             />
@@ -46,6 +57,8 @@ const SignupContainer = () => {
             <input
               type="password"
               placeholder="Re-enter your password"
+              value={confPassword}
+              onChange={(e) => setConfPassword(e.target.value)}
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
               required
             />

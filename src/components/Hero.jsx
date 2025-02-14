@@ -18,12 +18,14 @@ const Hero = () => {
           <div className="flex gap-4 flex-col md:flex-row">
             <Link
               to="/table-booking"
+              onClick={() => scrollTo(0, 0)}
               className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 flex items-center justify-center gap-2 cursor-pointer border font-DMSans"
             >
               Book a Table <FaArrowRight />
             </Link>
             <Link
               to="/menu"
+              onClick={() => scrollTo(0, 0)}
               className="px-6 py-3 border text-white rounded-full hover:bg-green-600 hover:text-white transition duration-300 font-DMSans flex items-center justify-center gap-2 cursor-pointer"
             >
               Explore Menu <FaArrowRight />

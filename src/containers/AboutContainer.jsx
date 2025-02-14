@@ -22,7 +22,7 @@ const AboutContainer = () => {
         <img src={heroOne} alt="Hero" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black opacity-30"></div>
         <div className="absolute inset-0 flex items-center justify-center z-20 text-center px-4">
-          <p className="text-white text-lg md:text-xl lg:text-4xl font-PlayFair">
+          <p className="text-white text-2xl md:text-3xl lg:text-4xl font-PlayFair">
             Experience the authentic flavors & <br /> timeless traditions we
             bring to your table.
           </p>
@@ -63,7 +63,7 @@ const AboutContainer = () => {
 
         {/* Image Section */}
         <div className="w-full lg:w-1/2">
-          <div className="w-full h-[300px] sm:h-[500px] lg:h-[700px] overflow-hidden rounded-2xl">
+          <div className="w-full h-[600px] lg:h-[800px] overflow-hidden rounded-2xl">
             <img
               src={aboutimg}
               alt="Healthy food"

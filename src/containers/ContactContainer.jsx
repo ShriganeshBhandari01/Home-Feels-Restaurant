@@ -1,7 +1,12 @@
+import { useState } from "react";
 import Footer from "../components/Footer";
 import Title from "../components/Title";
 
 const ContactContainer = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
   return (
     <>
       <div className="bg-[#F9F9F7] min-h-screen flex flex-col items-center py-8">
@@ -26,6 +31,8 @@ const ContactContainer = () => {
                 <input
                   type="text"
                   placeholder="Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
                 />
               </div>
@@ -36,6 +43,8 @@ const ContactContainer = () => {
                 <input
                   type="email"
                   placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
                 />
               </div>
@@ -47,6 +56,8 @@ const ContactContainer = () => {
               <input
                 type="text"
                 placeholder="Subject"
+                value={subject}
+                onChange={() => setSubject(e.target.value)}
                 className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               />
             </div>
@@ -57,6 +68,8 @@ const ContactContainer = () => {
               <textarea
                 rows="4"
                 placeholder="Your Message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="rounded-2xl border border-[#DBDFD0] py-2 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               />
             </div>

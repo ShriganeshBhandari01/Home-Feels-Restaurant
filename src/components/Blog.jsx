@@ -81,7 +81,11 @@ const Blog = () => {
         </div>
       </div>
       <div className="flex justify-center mb-8 md:py-8 mt-6">
-        <Link to={'/blogs'} className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 cursor-pointer">
+        <Link
+          to={"/blogs"}
+          onClick={() => scrollTo(0, 0)}
+          className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 cursor-pointer"
+        >
           Read All Articles
         </Link>
       </div>

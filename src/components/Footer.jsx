@@ -10,7 +10,7 @@ const Footer = () => {
           {/* About Section */}
           <div className="flex flex-col gap-1">
             <div className="-mt-2">
-              <Link to="/">
+              <Link to="/" onClick={() => scrollTo(0, 0)}>
                 <div className="flex gap-3">
                   <img src={logo} alt="" className="w-10 lg:w-12" />
                   <div className="text-center pt-[8px] lg:pt-[10px]">
@@ -36,6 +36,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
+                  onClick={() => scrollTo(0, 0)}
                   className="text-[#ADB29E] hover:text-white transition font-DMSans"
                 >
                   Home
@@ -44,6 +45,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/menu"
+                  onClick={() => scrollTo(0, 0)}
                   className="text-[#ADB29E] hover:text-white transition"
                 >
                   Menu
@@ -52,6 +54,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/table-booking"
+                  onClick={() => scrollTo(0, 0)}
                   className="text-[#ADB29E] hover:text-white transition font-DMSans"
                 >
                   Book a Table
@@ -60,6 +63,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about"
+                  onClick={() => scrollTo(0, 0)}
                   className="text-[#ADB29E] hover:text-white transition"
                 >
                   About Us
@@ -68,6 +72,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
+                  onClick={() => scrollTo(0, 0)}
                   className="text-[#ADB29E] hover:text-white transition"
                 >
                   Contact
@@ -76,9 +81,10 @@ const Footer = () => {
               <li>
                 <Link
                   to="/blog"
+                  onClick={() => scrollTo(0, 0)}
                   className="text-[#ADB29E] hover:text-white transition font-DMSans"
                 >
-                  Blogs
+                  Blog
                 </Link>
               </li>
             </ul>
