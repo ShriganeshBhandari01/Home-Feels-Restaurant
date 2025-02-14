@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import heroThree from "../assets/hero-three.jpg";
 const About = () => {
   return (
@@ -27,9 +28,9 @@ const About = () => {
           about the overall experience. Our staff, renowned for their warmth and
           dedication, strives to make every visit an unforgettable event.
         </p>
-        <button className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 cursor-pointer">
+        <Link to='/about' className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 cursor-pointer">
           More About Us
-        </button>
+        </Link>
       </div>
     </div>
   );

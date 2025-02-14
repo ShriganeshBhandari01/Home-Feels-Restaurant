@@ -4,6 +4,7 @@ import chicken from "../assets/chicken.jpg";
 import french from "../assets/french.jpg";
 import cake from "../assets/cake.jpg";
 import pizza from "../assets/pizza.jpg";
+import { Link } from "react-router";
 
 const Blog = () => {
   const blogs = [
@@ -37,7 +38,7 @@ const Blog = () => {
 
       <div className="flex flex-col lg:flex-row gap-6 w-full items-stretch pt-8 mt-8">
         {/* Left Feature Blog */}
-        <div className="w-full lg:w-1/2 overflow-hidden rounded-2xl flex flex-col border border-[#F9F9F7] bg-white shadow-xl">
+        <Link className="w-full lg:w-1/2 overflow-hidden rounded-2xl flex flex-col border border-[#F9F9F7] bg-white shadow-xl cursor-pointer hover:drop-shadow-2xl">
           <img
             src={burger}
             alt="Healthy food"
@@ -55,14 +56,14 @@ const Blog = () => {
               reiciendis!
             </p>
           </div>
-        </div>
+        </Link>
 
         {/* Right Blog Grid */}
         <div className="hidden sm:grid w-full lg:w-1/2 grid-cols-1 sm:grid-cols-2 gap-6">
           {blogs.map((blog, index) => (
             <div
               key={index}
-              className="h-[260px] sm:h-[300px] overflow-hidden rounded-2xl flex flex-col border border-[#F9F9F7] bg-white shadow-xl"
+              className="h-[260px] sm:h-[300px] overflow-hidden rounded-2xl flex flex-col border border-[#F9F9F7] bg-white shadow-xl cursor-pointer hover:drop-shadow-2xl"
             >
               <img
                 src={blog.img}
@@ -80,9 +81,9 @@ const Blog = () => {
         </div>
       </div>
       <div className="flex justify-center mb-8 md:py-8 mt-6">
-        <button className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 cursor-pointer">
+        <Link to={'/blogs'} className="px-6 py-3 bg-green-600 text-white rounded-full hover:bg-green-700 transition duration-300 cursor-pointer">
           Read All Articles
-        </button>
+        </Link>
       </div>
     </div>
   );

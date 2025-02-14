@@ -17,10 +17,10 @@ const BookTableContainer = () => {
       </div>
 
       {/* Form and Contact Info Section */}
-      <div className="w-full h-[55vh]">
+      <div className="w-full min-h-[500px] lg:h-[55vh]">
         <img src={map} alt="" className="w-full h-full object-cover" />
       </div>
-      <div className="absolute top-[14%] lg:top-[18%] left-1/2 transform -translate-x-1/2 w-[90%] max-w-5xl bg-white p-8 shadow-xl rounded-2xl flex flex-col lg:flex-row gap-8">
+      <div className="absolute top-[14%] lg:top-[16%] left-1/2 transform -translate-x-1/2 w-[95%] lg:w-[50%] max-w-5xl bg-white p-8 shadow-xl rounded-2xl flex flex-col lg:flex-row gap-8">
         {/* Form Section */}
         <form className="flex-1 flex gap-6 flex-col">
           <div className="flex gap-4 flex-col lg:flex-row">
@@ -34,55 +34,40 @@ const BookTableContainer = () => {
               <input
                 type="date"
                 id="date"
-                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 w-full"
+                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 w-full focus:ring-2 focus:ring-green-500 focus:outline-none"
                 required
               />
             </div>
-            <div className="flex flex-col flex-1 gap-2 w-full">
-              <label
-                htmlFor="time"
-                className="font-DMSans font-bold text-[16px]"
-              >
+            <div className="flex flex-col flex-1 gap-2">
+              <label className="font-DMSans font-bold text-[16px]">
                 Time <span className="text-red-500">*</span>
               </label>
               <input
                 type="time"
-                id="time"
-                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 w-full"
-                required
+                placeholder="Time"
+                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               />
             </div>
           </div>
           <div className="flex gap-4 flex-col lg:flex-row">
             <div className="flex flex-col flex-1 gap-2">
-              <label
-                htmlFor="name"
-                className="font-DMSans font-bold text-[16px]"
-              >
+              <label className="font-DMSans font-bold text-[16px]">
                 Name <span className="text-red-500">*</span>
               </label>
               <input
                 type="text"
-                id="name"
-                placeholder="Enter your name"
-                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4"
-                required
+                placeholder="Name"
+                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               />
             </div>
             <div className="flex flex-col flex-1 gap-2">
-              <label
-                htmlFor="phone"
-                className="font-DMSans font-bold text-[16px]"
-              >
-                Phone <span className="text-red-500">*</span>
+              <label className="font-DMSans font-bold text-[16px]">
+                Phone No. <span className="text-red-500">*</span>
               </label>
               <input
-                type="tel"
-                id="phone"
-                placeholder="Enter your phone number"
-                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4"
-                pattern="[0-9]{10}"
-                required
+                type="text"
+                placeholder="Phone No."
+                className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               />
             </div>
           </div>
@@ -91,11 +76,11 @@ const BookTableContainer = () => {
               htmlFor="persons"
               className="font-DMSans font-bold text-[16px]"
             >
-              Total Persons
+              Total Persons <span className="text-red-500">*</span>
             </label>
             <select
               id="persons"
-              className="rounded-[72px] border border-[#DBDFD0] py-2 px-4"
+              className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               required
             >
               <option value="">Select number of persons</option>

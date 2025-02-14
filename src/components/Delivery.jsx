@@ -1,9 +1,9 @@
 import aboutTwo from "../assets/about-two.jpg";
 import aboutFive from "../assets/about-five.jpg";
 import aboutSix from "../assets/about-six.jpg";
-import leaf from "../assets/leaf.svg";
-import offers from "../assets/offer.svg";
-import star from "../assets/star.svg";
+import leaf from "../assets/leaf.png";
+import offers from "../assets/money-bags.png";
+import star from "../assets/star.png";
 
 const Delivery = () => {
   return (
@@ -49,7 +49,7 @@ const Delivery = () => {
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-2">
             <div className="bg-[#AD343E] rounded-[50%] w-7 h-7 flex justify-center items-center">
-              <img src={leaf} alt="" />
+              <img src={leaf} alt="" className="w-5" />
             </div>
             <p className="font-medium text-xl leading-7 font-DMSans">
               Authentic & Fresh Ingredients
@@ -57,7 +57,7 @@ const Delivery = () => {
           </div>
           <div className="flex items-center gap-2">
             <div className="bg-[#AD343E] rounded-[50%] w-7 h-7 flex justify-center items-center">
-              <img src={offers} alt="" />
+              <img src={offers} alt="" className="w-5" />
             </div>
             <p className="font-medium text-xl leading-7 font-DMSans">
               Best Offers & Prices
@@ -65,7 +65,7 @@ const Delivery = () => {
           </div>
           <div className="flex items-center gap-2">
             <div className="bg-[#AD343E] rounded-[50%] w-7 h-7 flex justify-center items-center">
-              <img src={star} alt="" className="w-6" />
+              <img src={star} alt="" className="w-5" />
             </div>
             <p className="font-medium text-xl leading-7 font-DMSans">
               Exceptional Service & Ambiance

@@ -1,11 +1,15 @@
-import { Link, NavLink } from "react-router";
+import { Link, NavLink, useNavigate } from "react-router";
 import { useState } from "react";
 import menu_icon from "../assets/menu_icon.png";
 import dropdown_icon from "../assets/dropdown_icon.png";
 import logo from "../assets/restaurant.png";
+import { assets } from "../assets/assets";
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
+  const [token, setToken] = useState("");
+
+  const navigate = useNavigate();
 
   const handleNavbar = () => {
     setNavActive(!navActive);
@@ -46,11 +50,45 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-4 justify-center items-center">
-          <Link to="/table-booking">
-            <button className="px-6 py-3 border text-black rounded-full hover:bg-green-600 hover:text-white transition duration-300 font-DMSans cursor-pointer">
-              Book a Table
-            </button>
-          </Link>
+          {token ? (
+            <div className="group relative">
+              <img
+                onClick={() => navigate("/profile")}
+                src={assets.profile_icon}
+                alt="Profile"
+                className="w-[24px] h-[24px] cursor-pointer"
+              />
+              <div className="group-hover:block hidden absolute right-0 pt-4">
+                <div className="flex flex-col gap-2 w-40 py-3 px-5 bg-white text-gray-700 shadow-lg rounded">
+                  <Link to="/profile" className="hover:text-black">
+                    My Profile
+                  </Link>
+                  <Link to="/orders" className="hover:text-black">
+                    Orders
+                  </Link>
+                  <p
+                    className="cursor-pointer hover:text-black"
+                    onClick={() => setToken("")}
+                  >
+                    Logout
+                  </p>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <div className="hidden md:flex gap-4 items-center">
+              <Link to="/login" className="text-green-600 hover:underline">
+                Login
+              </Link>
+              <Link
+                to="/signup"
+                className="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700"
+              >
+                Signup
+              </Link>
+            </div>
+          )}
+
           <div className="md:hidden">
             <img
               src={menu_icon}
@@ -65,25 +103,57 @@ const Navbar = () => {
         {navActive && (
           <div className="fixed top-0 left-0 bottom-0 w-full h-full bg-white md:hidden z-40">
             <div
-              className="flex items-center cursor-pointer gap-2 px-2 py-2"
+              className="flex items-center cursor-pointer gap-2 px-4 py-4"
               onClick={handleNavbar}
             >
-              <img src={dropdown_icon} alt="" className="w-3" />
-              <p className="text-[20px]">Back</p>
+              <img src={dropdown_icon} alt="Close" className="w-4" />
+              <p className="text-lg font-bold">Back</p>
             </div>
-            <div className="flex flex-col px-0 font-DMSans">
-              <NavLink to="/" onClick={() => setNavActive(false)}>
-                <p className="border-2 border-b-0 p-2">Home</p>
+            <div className="flex flex-col text-lg font-DMSans">
+              <NavLink
+                to="/"
+                onClick={() => setNavActive(false)}
+                className="p-3 border-b hover:bg-gray-100"
+              >
+                Home
               </NavLink>
-              <NavLink to="/about" onClick={() => setNavActive(false)}>
-                <p className="border-2 border-b-0 p-2">About</p>
+              <NavLink
+                to="/about"
+                onClick={() => setNavActive(false)}
+                className="p-3 border-b hover:bg-gray-100"
+              >
+                About
               </NavLink>
-              <NavLink to="/menu" onClick={() => setNavActive(false)}>
-                <p className="border-2 border-b-0 p-2">Menu</p>
+              <NavLink
+                to="/menu"
+                onClick={() => setNavActive(false)}
+                className="p-3 border-b hover:bg-gray-100"
+              >
+                Menu
               </NavLink>
-              <NavLink to="/contact" onClick={() => setNavActive(false)}>
-                <p className="border-2 border-b-2 p-2">Contact</p>
+              <NavLink
+                to="/contact"
+                onClick={() => setNavActive(false)}
+                className="p-3 border-b hover:bg-gray-100"
+              >
+                Contact
               </NavLink>
+              {!token && (
+                <div className="flex flex-col p-3 gap-2">
+                  <Link
+                    to="/login"
+                    className="bg-green-600 text-white px-4 py-2 rounded-full text-center hover:bg-green-700"
+                  >
+                    Login
+                  </Link>
+                  <Link
+                    to="/signup"
+                    className="bg-green-600 text-white px-4 py-2 rounded-full text-center hover:bg-green-700"
+                  >
+                    Signup
+                  </Link>
+                </div>
+              )}
             </div>
           </div>
         )}

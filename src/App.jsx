@@ -6,6 +6,9 @@ import AboutPage from "./pages/AboutPage";
 import MenuPage from "./pages/MenuPage";
 import ContactPage from "./pages/ContactPage";
 import BookTablePage from "./pages/BookTablePage";
+import BlogPage from "./pages/BlogPage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <Route path="/menu" element={<MenuPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/table-booking" element={<BookTablePage />} />
+          <Route path="/blogs" element={<BlogPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
         </Routes>
       </div>
     </>
