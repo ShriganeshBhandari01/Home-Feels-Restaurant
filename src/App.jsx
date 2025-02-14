@@ -9,6 +9,7 @@ import BookTablePage from "./pages/BookTablePage";
 import BlogPage from "./pages/BlogPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
+import ForgotPasswordPage from "./pages/ForgotPasswordPage";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/blogs" element={<BlogPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         </Routes>
       </div>
     </>

@@ -1,9 +1,10 @@
+import { Link } from "react-router";
 import Title from "../components/Title";
 
 const LoginContainer = () => {
   return (
     <div className="pt-4 md:pt-6 lg:pt-8 px-3 sm:px-[5vw] lg:px-[9vw] flex flex-col items-center min-h-[60vh]">
-      <div className="flex flex-col gap-5 items-center justify-center w-full max-w-md bg-white p-6 shadow-lg rounded-xl">
+      <div className="flex flex-col gap-5 items-center justify-center w-full max-w-lg bg-white p-6 shadow-lg rounded-xl">
         <Title title="Login" />
         <p className="text-gray-600 text-center">
           Enter your credentials to access your account.
@@ -28,6 +29,14 @@ const LoginContainer = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:outline-none"
               required
             />
+            <div className="text-right">
+              <Link
+                to="/forgot-password"
+                className="text-green-600 hover:underline"
+              >
+                Forgot your password
+              </Link>
+            </div>
           </div>
 
           <button
@@ -39,10 +48,10 @@ const LoginContainer = () => {
         </form>
 
         <p className="text-sm text-gray-500">
-          Don&lsquo;t have an account?
-          <a href="/signup" className="text-green-600 hover:underline">
+          Don&lsquo;t have an account?<span> </span>
+          <Link to="/signup" className="text-green-600 hover:underline">
             Sign up
-          </a>
+          </Link>
         </p>
       </div>
     </div>

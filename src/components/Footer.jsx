@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
-import { NavLink } from "react-router";
+import { Link } from "react-router";
 import logo from "../assets/restaurant-white.png";
 
 const Footer = () => {
@@ -10,7 +10,7 @@ const Footer = () => {
           {/* About Section */}
           <div className="flex flex-col gap-1">
             <div className="-mt-2">
-              <NavLink to="/">
+              <Link to="/">
                 <div className="flex gap-3">
                   <img src={logo} alt="" className="w-10 lg:w-12" />
                   <div className="text-center pt-[8px] lg:pt-[10px]">
@@ -19,7 +19,7 @@ const Footer = () => {
                     </p>
                   </div>
                 </div>
-              </NavLink>
+              </Link>
             </div>
             <div>
               <p className="mt-3 text-[#ADB29E] font-DMSans">
@@ -34,36 +34,52 @@ const Footer = () => {
             <h3 className="text-xl font-semibold font-DMSans">Quick Links</h3>
             <ul className="mt-3 space-y-2">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/"
                   className="text-[#ADB29E] hover:text-white transition font-DMSans"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/menu"
+                <Link
+                  to="/menu"
                   className="text-[#ADB29E] hover:text-white transition"
                 >
                   Menu
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/about"
+                <Link
+                  to="/table-booking"
+                  className="text-[#ADB29E] hover:text-white transition font-DMSans"
+                >
+                  Book a Table
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/about"
                   className="text-[#ADB29E] hover:text-white transition"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="text-[#ADB29E] hover:text-white transition"
                 >
                   Contact
-                </a>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/blog"
+                  className="text-[#ADB29E] hover:text-white transition font-DMSans"
+                >
+                  Blogs
+                </Link>
               </li>
             </ul>
           </div>
@@ -77,30 +93,30 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="flex space-x-4 mt-4">
-              <a
-                href="#"
+              <Link
+                to="#"
                 className="text-[#ADB29E] hover:text-white transition"
               >
                 <FaFacebookF size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="text-[#ADB29E] hover:text-white transition"
               >
                 <FaInstagram size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="text-[#ADB29E] hover:text-white transition"
               >
                 <FaTwitter size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="#"
                 className="text-[#ADB29E] hover:text-white transition"
               >
                 <FaYoutube size={20} />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import french from "../assets/french.jpg";
 import cake from "../assets/cake.jpg";
 import pizza from "../assets/pizza.jpg";
 import { Link } from "react-router";
+import Footer from "../components/Footer";
 const BlogContainer = () => {
   const blogs = [
     {
@@ -110,7 +111,8 @@ const BlogContainer = () => {
   ];
 
   return (
-    <div className="pt-4 md:pt-6 lg:pt-8 px-3 sm:px-[5vw] lg:px-[9vw]">
+    <>
+        <div className="pt-4 md:pt-6 lg:pt-8 px-3 sm:px-[5vw] lg:px-[9vw]">
       <div className="flex flex-col gap-5 items-center justify-center">
         <Title title="Latest Food Blogs" />
         <p className="max-w-[600px] text-center text-gray-600">
@@ -140,6 +142,8 @@ const BlogContainer = () => {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 
