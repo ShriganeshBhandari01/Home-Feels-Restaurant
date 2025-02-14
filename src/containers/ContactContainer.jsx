@@ -57,7 +57,7 @@ const ContactContainer = () => {
                 type="text"
                 placeholder="Subject"
                 value={subject}
-                onChange={() => setSubject(e.target.value)}
+                onChange={(e) => setSubject(e.target.value)}
                 className="rounded-[72px] border border-[#DBDFD0] py-2 px-4 focus:ring-2 focus:ring-green-500 focus:outline-none"
               />
             </div>

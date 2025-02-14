@@ -9,9 +9,9 @@ const About = () => {
           alt="Healthy food"
           className="w-full h-full object-cover"
         />
-        <div className="absolute top-4 right-4 z-30 bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+        {/* <div className="absolute top-4 right-4 z-30 bg-black bg-opacity-50 px-4 py-2 rounded-lg">
           <p className="text-white text-lg font-semibold">+91-123-456-7980</p>
-        </div>
+        </div> */}
       </div>
       <div className="w-full lg:w-1/2 space-y-6 font-DMSans">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
